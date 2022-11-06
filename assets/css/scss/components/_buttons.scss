@@ -1,0 +1,48 @@
+.button {
+  min-width: 118px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 23px;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: 0.3s ease all;
+
+  &.filled {
+    background-color: $orange;
+    color: $white;
+    border-color: $orange;
+
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+
+    &.white {
+      color: $white;
+      border-color: $white;
+
+      &:hover {
+        color: $orange-hover;
+        border-color: $orange-hover;
+      }
+    }
+  }
+
+  &.link {
+    color: $orange;
+    background-color: transparent;
+    padding: 0;
+    
+    &:hover {
+      color: $orange-hover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
